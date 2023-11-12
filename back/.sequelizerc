@@ -1,0 +1,49 @@
+const path = require('path');
+
+module.exports = {
+	// config: path.resolve(__dirname, 'build', 'database', 'config.js'),
+	// 'models-path': path.resolve(__dirname, 'build', 'database', 'models'),
+	// 'seeders-path': path.resolve(
+	// 	__dirname,
+	// 	'src',
+	// 	'infrastructure',
+	// 	'database',
+	// 	'seeders'
+	// ),
+	// 'migrations-path': path.resolve(
+	// 	__dirname,
+	// 	'src',
+	// 	'infrastructure',
+	// 	'database',
+	// 	'migrations'
+	// ),
+
+	config: path.resolve(
+		__dirname,
+		'lib',
+		'infrastructure',
+		'config',
+		'config.js'
+	),
+	'models-path': path.resolve(
+		__dirname,
+		'lib',
+		'infrastructure',
+		'orm',
+		'models'
+	),
+	'migrations-path': path.resolve(
+		__dirname,
+		'lib',
+		'infrastructure',
+		'orm',
+		'migrations'
+	),
+	'seeders-path': path.resolve(
+		__dirname,
+		'lib',
+		'infrastructure',
+		'orm',
+		'seeders'
+	),
+};
